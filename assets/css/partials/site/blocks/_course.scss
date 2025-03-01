@@ -1,0 +1,28 @@
+.course-image{
+    img{
+        aspect-ratio: 1 / .9;
+    }
+}
+.course-content{
+    margin-top: 20px;
+    p{
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+}
+.feature-course{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    .course-image{
+        width: calc(60% - 15px);
+    }
+    .course-content{
+        width:calc(40% - 15px);
+    }
+}
+.course-btn{
+    line-height: .6;
+    margin-top: 20px;
+}

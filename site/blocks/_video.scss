@@ -1,0 +1,75 @@
+a,a:visited{
+    &.video-popup-link{
+        display: block;
+        padding-bottom: 0;
+    }
+    &:hover{
+        .video-icon{
+            transform: scale(1.05);
+        }
+    }
+}
+.video-popup-link{
+    padding-top: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px 6px 0 0;
+}
+.video-icon{
+    transition: all .3s ease-in-out;
+    line-height: .6;
+    width: 60px;
+    height: 40px;
+    background-color: var(--doi_golden_2);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    img{
+        max-width: 16px;
+    }
+}
+.video-title{
+    margin-top: 20px;
+    h2,h3,h4,h5,h6{
+        margin-bottom: 0;
+    }
+}
+.video-btn{
+    line-height: .6;
+}
+button.mfp-close, button.mfp-arrow{
+    margin: 0;
+    padding: 0;
+    background-color: var(--doi_green);
+    background-image: url(../img/cross-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    opacity: 1;
+    height: 44px;
+    &::before,
+    &::after{
+        display: none;
+    }
+    &:hover{
+        background-color: var(--doi_green_1);
+    }
+}
+.mfp-iframe-holder .mfp-close{
+    top: -55px;
+    right: 0;
+}
+.mfp-bg{
+    background: var(--doi_golden);
+}
+.video-speaker{
+    font-size: 16px;
+}

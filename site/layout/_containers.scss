@@ -1,0 +1,100 @@
+/****
+ *
+ * containers
+ *
+****/
+
+.wrapper {
+	max-width: 1180px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.ctn-1400 {
+	.wrapper {
+		max-width: 1400px;
+	}
+}
+
+.ctn-980 {
+	.wrapper {
+		max-width: 980px;
+	}
+}
+
+.full-width-ctn {
+	.wrapper {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.green-ctn {
+	background-color: var(--doi_green);
+
+	h1,
+	.heading-1,
+	h2,
+	.heading-2,
+	h3,
+	.heading-3,
+	h4,
+	.heading-4,
+	h5,
+	.heading-5,
+	h6,
+	.heading-6,
+	p,
+	li,
+	span,
+	#breadcrumbs,
+	.book-author,
+	strong {
+		color: var(--doi_white);
+	}
+	
+	.column-box {
+		p,
+		li,
+		span,
+		#breadcrumbs,
+		.book-author,
+		strong {
+			color: var(--doi_regular_text);
+		}
+
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: var(--doi_heading_color);
+		}
+		.button {
+			span{
+				color: var(--doi_white);
+			}
+		}
+	}
+
+	a.button,
+	a.button:visited,
+	span.button,
+	.is-style-mycustomstyle .wp-element-button {
+		&.outline-btn {
+			background-color: transparent;
+			border-color: var(--doi_border_1);
+
+			span {
+				color: var(--doi_white_text);
+			}
+			&:hover{
+				border-color: var(--doi_border_5);
+			}
+		}
+	}
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}

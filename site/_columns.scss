@@ -1,0 +1,84 @@
+.two-columns .column,
+ul.two-columns li,
+ol.two-columns li {
+    width: calc(50% - 15px);
+}
+
+.three-columns .column,
+ul.three-columns li, 
+ol.three-columns li{
+    width: calc(33% - 16.5px);
+}
+
+.four-columns .column,
+ul.four-columns li,
+ol.four-columns li {
+    width: calc(25% - 18px);
+}
+
+.five-columns .column,
+ul.five-columns li,
+ol.five-columns li{
+    width: calc(20% - 19.2px);
+}
+
+.two-columns,
+.three-columns {
+    gap: clamp(1.25rem, 2.212vw + 0.216rem, 1.875rem);
+}
+
+.four-columns,
+.five-columns {
+    gap: 24px;
+}
+
+ul,ol{
+    &.two-columns,
+    &.three-columns,
+    &.four-columns,
+    &.five-columns{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.two-columns,
+.three-columns,
+.four-columns,
+.five-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-box,
+.books-lists .book-link {
+    box-sizing: border-box;
+    box-shadow: var(--box-shahdow_2);
+    background-color: var(--doi_white);
+    border-radius: 6px;
+}
+
+.column-box:not(.stat-item, .contact-form,.blog-article-inner) {
+    padding: 24px;
+}
+
+.four-columns,
+.five-columns {
+    .column-box{
+        padding: 20px;
+    }
+}
+.column-box{
+    &.event-item,&.video-column,&.course-item,&.team-member,&.project-box,&.book-link{
+        padding: 0 0 30px;
+        img{
+            border-radius: 6px 6px  0 0;
+        }
+    }
+    .event-content,.video-title,.video-speaker,.course-content,.team-member-content,.project-content,.book-content{
+        padding-inline: 24px;
+    }
+    &.feature-event  .event-content{
+        padding-inline: 16px;
+    }
+}

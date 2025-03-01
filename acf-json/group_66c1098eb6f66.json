@@ -1,0 +1,53 @@
+{
+    "key": "group_66c1098eb6f66",
+    "title": "checkbox",
+    "fields": [
+        {
+            "key": "field_66c1098f5760b",
+            "label": "Check",
+            "name": "check",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "butter": "Butter",
+                "bbq": "BBQ"
+            },
+            "default_value": [
+                "bbq"
+            ],
+            "return_format": "array",
+            "allow_custom": 1,
+            "save_custom": 0,
+            "layout": "vertical",
+            "toggle": 1,
+            "custom_choice_button_text": "Add new choice"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "164"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1723927493
+}

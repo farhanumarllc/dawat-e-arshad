@@ -1,0 +1,448 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+body {
+	@include font(rbt, reg, family weight);
+	position: relative;
+	font-size: var(--doi_font_size_1);
+	color: var(--doi_body_color);
+	background-color: var(--doi_body_bg);
+	line-height: 1.5;
+}
+
+.urdu-language {
+	line-height: 2.2;
+	font-family: "Jameel Noori Nastaleeq", serif;
+	direction: rtl;
+	text-align: right;
+
+	// Ordered / Unordered List
+	footer{
+		h2,h3,h4,h5,h6,p{
+			font-size: 16px;
+		}
+	}
+	.header-nav ul{
+	li {
+
+		> a,
+		> a:visited {
+			padding: 24px;
+			line-height: inherit;
+		}
+	}
+	ul{
+		top: 77px;
+		text-align: right;
+		li {
+			a,a:visited{
+				padding: 10px 20px;
+			}
+		}
+	}
+	}
+	.header-nav ul, .legal-nav ul, .footer-nav ul{
+		li {
+	
+			> a,
+			> a:visited {
+				font-size: 14px;
+			}
+		}
+		}
+	.top-bar-text span{
+		&:first-child{
+			border-right: none;
+			padding-right: 0;
+		}
+		&:last-child{
+			padding-right: 12px;
+			border-right: 1px solid var(--doi_border_1);
+		}
+	}
+
+	main {
+
+		ul ul,
+		ol ol,
+		ul ol,
+		ol ul {
+			margin-right: 0;
+			margin-left: 30px;
+		}
+
+		ul,
+		ol {
+			margin: 0 20px 30px 0;
+		}
+
+		ul {
+			margin-left: 0;
+
+			ul,
+			ol {
+				margin-left: 0;
+				margin-right: 13px;
+			}
+
+			li {
+				padding-left: 0;
+				padding-right: 20px;
+
+				&::before {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+
+		ol {
+			margin-left: auto;
+			margin-right: 0;
+
+			ol,
+			ul {
+				margin-left: 0;
+				margin-right: 13px;
+			}
+
+			&>li {
+				padding-left: 0;
+				padding-right: 24px;
+
+				&::before {
+					left: auto;
+					right: 0;
+					top: 0;
+				}
+			}
+
+			ol {
+				li {
+					padding-left: 0;
+					padding-right: 34px;
+				}
+
+				ol {
+					li {
+						padding-left: 0;
+						padding-right: 64px;
+					}
+
+					ol {
+						li {
+							padding-left: 0;
+							padding-right: 80px;
+						}
+					}
+				}
+			}
+
+			ul {
+
+				li {
+					padding-left: 0;
+					padding-right: 20px;
+
+					&::before {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.owl-carousel {
+		direction: ltr;
+	}
+
+	.owl-item {
+		direction: rtl;
+	}
+h1,
+.heading-1 {
+	font-size: var(--doi_font_size_6);
+}
+
+h2,
+.heading-2 {
+	font-size: var(--doi_font_size_5);
+}
+	label,
+	h1,
+	.heading-1,
+	h2,
+	.heading-2,
+	h3,
+	.heading-3,
+	h4,
+	.heading-4,
+	h5,
+	.heading-5,
+	h6,
+	.heading-6,
+	a.blog-article,
+	a:visited.blog-article {
+		line-height: 2.2;
+	}
+
+	h1,
+	.heading-1,
+	h2,
+	.heading-2,
+	h3,
+	.heading-3,
+	h4,
+	.heading-4,
+	h5,
+	.heading-5,
+	h6,
+	.heading-6,
+	label,
+	input,
+	a,
+	a:visited,
+	input[type="submit"],
+	button,
+	input[type="button"],
+	input[type="reset"],
+	button,
+	span,
+	li {
+		font-family: "Jameel Noori Nastaleeq", serif;
+	}
+
+	.header-nav ul {
+		li.menu-item-has-children {
+			>a {
+				padding-left: 35px;
+				padding-right: 24px;
+
+				+span {
+					right: auto;
+					left: 13px;
+				}
+			}
+		}
+
+		ul {
+			right: 0;
+			left: 0;
+		}
+	}
+
+	.feature-course {
+		flex-direction: row-reverse;
+	}
+
+	.footer-form input[type=submit] {
+		right: auto;
+		left: 0;
+		border-radius: 6px 0 0 6px;
+		margin-right: 0;
+	}
+
+	.single-widget:nth-child(1) {
+		margin-right: 0;
+		margin-left: 8%;
+	}
+
+	.books-slider .owl-nav,
+	.projects-slider .owl-nav {
+		right: auto;
+		left: 0;
+	}
+
+	a.button,
+	a.button:visited,
+	span.button,
+	.is-style-mycustomstyle .wp-element-button,
+	input[type="submit"],button,
+	input[type="button"],
+	input[type="reset"] {
+		padding: 7px 24px;
+		line-height: 2;
+	}
+	.event-btn,.course-btn,.project-btn{
+		a,a:visited{
+			padding: 10px 24px 6px;
+			font-size: 13px;
+		}
+	}
+
+	a.button,
+	a.button:visited,
+	span.button,
+	.is-style-mycustomstyle .wp-element-button {
+		font-size: 14px;
+		margin-right: 0;
+		margin-left: 9px;
+		&.outline-btn{
+			padding-block: 6px;
+		}
+		&.read-more-btn{
+			padding: 12px 24px 6px;
+			font-size: 12px;
+		}
+		&.download-btn{
+			padding: 8px 24px 4px;
+		}
+	}
+
+	.faq-head {
+		padding: 20px 20px 14px;
+	}
+.video-speaker{
+	margin-top: 6px;
+}
+.team-member-designation {
+    font-size: 14px;
+}
+.book-link .book-category,.four-columns .popup-link .team-member-designation{
+	font-size: 12px;
+}
+	ol,
+	ul {
+		>li {
+			padding-left: 0;
+
+			&::before {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+	a,a:visited{
+		&.popup-link{
+			line-height: 2;
+			.team-member-name{
+				h2,h3,h4,h5,h6{
+				font-size: 16px;
+			}
+			}
+		}
+	}
+.project-content{
+	h2,h3,h4,h5,h6{
+		margin-bottom: 10px;
+	}
+}
+button.owl-dot{
+height: 18px;
+}
+	input[type="text"],
+	input[type="number"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="url"],
+	input[type="search"],
+	input[type="password"],
+	input[type="time"],
+	input[type="date"],
+	input[type="datetime-local"],
+	input[type="week"],
+	input[type="month"],
+	input[type="file"],
+	input[type="range"],
+	input[list],
+	input[type="string"],
+	input[type="phone"],
+	select,
+	.gform-text-input-reset,
+	input[type="submit"],
+	button,
+	input[type="button"],
+	input[type="reset"] {
+		height: 50px;
+		font-size: 16px;
+	}
+
+	textarea {
+		font-size: 16px;
+	}
+
+	label {
+		font-size: 14px;
+	}
+
+	.half-field {
+		margin-right: 0;
+		margin-left: 15px;
+
+		&.last {
+			margin-left: 0;
+		}
+	}
+
+	.top-bar {
+
+		p,
+		span,
+		li {
+			font-size: 14px;
+		}
+
+		a,
+		a:visited {
+			font-size: 14px;
+		}
+	}
+
+	.log-in-btn {
+		padding: 10px 16px 3px;
+	}
+
+	.language-options {
+		span {
+			padding: 10px 10px 5px;
+		}
+	}
+
+	.event-category {
+
+		a,
+		a:visited {
+			font-size: 14px;
+		}
+	}
+
+	.video-speaker {
+		font-size: 14px;
+	}
+
+	.team-member-popup-inner{
+		flex-direction: row-reverse;
+		.team-member-content{
+			text-align: right;
+			padding-top: 24px;
+		}
+	}
+	.team-member-detail{
+		direction: ltr;
+		padding: 24px 10px 0 0;
+		margin-left: 0;
+		margin-right: -10px;
+	}
+}
+
+
+p {
+	margin: 0 0 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+::selection {
+	color: var(--doi_white);
+	background-color: var(--doi_highlight_bg);
+}
+
+strong {
+	color: var(--doi_text_strong);
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In - Dawat o Irshad</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+     <link rel="stylesheet" href="../assets/css/bundle.min.css" />
+</head>
+
+<body class="urdu-language">
+    <header class="header-section">
+        <div class="top-bar center-align" id="top-bar-ajax">
+            <div class="header-wrapper d-flex">
+                
+                <div class="top-bar-text d-flex">
+                    <span>Fajr 3:46</span>
+                    <span>Israq 5:19</span>
+                    <span>Zhuhar 12:16</span>
+                    <span>Asar 5:08</span>
+                    <span>Maghrib 7:12</span>
+                    <span>Esha 8:46</span>
+                </div>
+                <div class="top-bar-right">
+                    <div id="islamicDate">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-wrapper header-inner d-flex align-items-center justify-content-between">
+            <div class="header-logo logo">
+                <a href="home.html"><img src="../assets/img/site-logo.png" alt="Site Logo" /></a>
+            </div>
+            <div class="right-header header-navigation">
+                <div class="nav-overlay">
+                    <div class="nav-container">
+                        <div class="header-nav">
+                            <ul>
+                                <li>
+                                    <a href="home.html" class="current-menu-item">سر ورق</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="about.html">تعارف</a>
+                                <span class="menu-icon"></span>
+                                <ul>
+                                    <li>
+                                        <a href="founder.html">بانی ادارہ</a>
+                                    </li>
+                                    <li>
+                                        <a href="team.html">ہمارے اساتذہ</a>
+                                    </li>
+                                </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="courses.html">کورسز</a>
+                                    <span class="menu-icon"></span>
+                                    <ul>
+                                        <li>
+                                            <a href="#tahfeez-ul-Quran.html">حفظ القرآن</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#dars-e-nizami.html">درس نظامی </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="Khatme-Nabuwat.html">عقیدہ ختم نبوت</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="takhasus.html">تخصص </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="blog.html">بلاگ</a>
+                                    <span class="menu-icon"></span>
+                                    <ul>
+                                        <li>
+                                            <a href="events.html">تقریبات</a>
+                                            <a href="articles.html">کالم</a>
+                                            <a href="beyans.html">بیانات</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="books.html">کتابیں</a></li>
+                                <li><a href="admission.html">داخلہ فارم</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="projects.html">دیگر ادارے</a>
+                                    <span class="menu-icon"></span>
+                                    <ul>
+                                        <li>
+                                            <a href="projects.html">جامعہ عربیہ</a>
+                                        </li>
+                                        <li>
+                                            <a href="projects.html">جامعہ عائشہ للبنات</a>
+                                        </li>
+                                        <li>
+                                            <a href="projects.html">ادارہ مرکزیہ دعوت و ارشاد</a>
+                                        </li>
+                                        <li>
+                                            <a href="projects.html">کمز کالج</a>
+                                        </li>
+                                        <li>
+                                            <a href="projects.html">اشرف المدارس</a>
+                                        </li>
+                                        <li>
+                                            <a href="projects.html">مدرسہ امیر حمزہ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="header-btns desktop-hide">
+                                <a href="contact.html" class="button" title="Contact Us"><span>Contact Us</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-btn">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </div>
+            <div class="header-btns">
+                <a href="contact.html" class="button" title="Contact Us"><span>رابطہ</span></a>
+            </div>
+        </div>
+    </header>
+    <main id="main-section" class="main-section">
+        <section id="banner-section" class="banner-section banner-log-in">
+            <div class="wrapper">
+                    <div class="banner-content center-align">
+                        <h1 class="heading-1">لاگ ان</h1>
+                    </div>
+                    <div class="s-48"></div>
+                    <div class="log-in-form column-box">
+                        <h2 class="heading-5 center-align">اکاؤنٹ لاگ ان کریں</h2>
+                        <form>
+                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                            <input type="password" name="pass" id="pass" placeholder="Password" autocomplete="off" required/>
+                            <div class="recaptcha" id="g-recaptcha1"></div>
+                            <input type="submit" id="submit" value="login" >
+                            <div class="password-links">
+                                <a href="#">پاسورڈ یاد نہیں؟</a>
+                                <a href="#">نیا اکاؤنٹ بنائیں</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <section id="" class="page-section"></section>
+    </main>
+    <footer id="footer-section" class="footer-section">
+        <!-- Footer Start -->
+        <div class="footer-ctn">
+            <div class="wrapper">
+                <div class="footer-widgets d-flex justify-content-between flex-wrap">
+                    <div class="single-widget">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="../assets/img/site-logo.png" alt="Khatme Nabuwat Logo" />
+                            </a>
+                        </div>
+                        <h6 class="heading-6">Idara Markazia Dawat Irshad</h6>
+                        <!-- <h4>Contact us at:  -->
+                        <!-- For Donation Allied bank  -->
+                        <!-- Account no: 0010019788110019
+                            IBAN: PK04ABPA0010019788110019 -->
+                        <div class="mudrassa-address">
+                            <p>Tehsil chowk near DPO office Chiniot</p>
+                        </div>
+                        <div class="mudrassa-email">
+                            <a href="mailto:info@dawatoirshad.com">info@dawatoirshad.com</a>
+                        </div>
+                    </div>
+                    <div class="single-widget">
+                        <div class="footer-nav">
+                            <h6 class="heading-6">Site map</h6>
+                            <ul class="menu">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="books.html">Books</a></li>
+                                <li><a href="projects.html">Our Projects</a></li>
+                                <li><a href="events.html">events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-widget">
+                        <div class="footer-nav">
+                            <h6 class="heading-6">Contact us</h6>
+                            <ul class="menu">
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="">Support Us</a></li>
+                                <li><a href="admission.html">Admission</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-widget">
+                        <h6 class="heading-6">Connect with us</h6>
+                        <div class="footer-form">
+                            <form action="#">
+                                <label for="email">Email us</label>
+                                <input type="email" name="email" id="email" placeholder="Your email" />
+                                <input type="submit" value="Submit" />
+                            </form>
+                        </div>
+                        <div class="social-icons d-flex">
+                            <a href="#" class="facebook flex-center"><img src="../assets/img/facebook-icon.svg"
+                                    alt="Facebook Icon" /></a>
+                            <a href="#" class="linkdhin flex-center"><img src="../assets/img/linkedin-icon.svg"
+                                    alt="LinkedIn Icon" /></a>
+                            <a href="#" class="twitter flex-center"><img src="../assets/img/twitter-icon.svg"
+                                    alt="Twitter Icon" /></a>
+                            <a href="#" class="instagram flex-center">
+                                <img src="../assets/img/instagram-icon.svg" alt="Instagram Icon" /></a>
+                            <a href="#" class="youtube flex-center">
+                                <img src="../assets/img/youtube-icon.svg" alt="Youtube Icon" /></a>
+                            <a href="#" class="whatsapp flex-center">
+                                <img src="../assets/img/whatsapp-icon.svg" alt="Whatsapp Icon" /></a>
+                            <a href="#" class="pinterest flex-center">
+                                <img src="../assets/img/pinterest-icon.svg" alt="Pinterest Icon" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom d-flex align-items-center justify-content-between">
+                    <div class="copy-right">Copyright © 2024 By Dawat o Irshad</div>
+                    <div class="legal-nav">
+                        <div class="menu-legal-nav-container">
+                            <ul id="menu-legal-nav" class="menu">
+                                <li>
+                                    <a href="#">Sitemap</a>
+                                </li>
+                                <li><a href="">Terms of Use</a></li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="" src="../assets/js/jquery.min.js"></script>
+    
+    <script type="" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"></script>
+    <script type="" src="../assets/js/bundle.js"></script>
+</body>
+
+</html>
