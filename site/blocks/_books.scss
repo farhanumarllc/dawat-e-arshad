@@ -1,0 +1,139 @@
+.book-title {
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 6px;
+        a,a:visited{
+            color: var(--doi_heading_color);
+            &:hover{
+                color: var(--doi_link_color_hover);
+            }
+        }
+    }
+}
+
+.owl-item {
+    position: relative;
+    z-index: 1;
+}
+
+.books-slider {
+    .owl-stage-outer {
+        overflow: visible;
+    }
+}
+
+.books-slider,
+.projects-slider {
+    .owl-nav {
+        top: -89px;
+        bottom: auto;
+        height: 40px;
+        width: 90px;
+        left: auto;
+    }
+
+    .owl-prev {
+        left: 0;
+    }
+
+    .owl-next {
+        right: 0;
+    }
+
+    .book-image {
+        box-shadow: var(--box-shahdow_2);
+        border-radius: 6px;
+    }
+}
+
+.book-category {
+    margin: 20px 0 6px;
+    font-size: 16px;
+}
+
+.book-author {
+    font-size: 16px;
+    color: var(--doi_gray_2);
+}
+
+.book-image a,
+.book-image a:visited {
+    display: block;
+    line-height: .6;
+}
+
+.book-image img {
+    aspect-ratio: 1 / 1.3;
+}
+
+.book-btn {
+    line-height: .6;
+    margin-top: 20px;
+    a,a:visited{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.filter-categories {
+    display: flex;
+    gap: 12px;
+
+    button {
+        background-color: transparent;
+        color: var(--doi_golden);
+        border: 1px solid var(--doi_border_4);
+        margin: 0;
+        transition: all .3s ease-in-out .15s;
+
+        &:hover,
+        &.active {
+            color: var(--doi_theme_btn_color_hover);
+            border-color: var(--doi_border_5);
+        }
+    }
+}
+
+.books-lists img {
+    aspect-ratio: 1/1;
+}
+
+.book-category {
+    position: relative;
+}
+
+.book-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.hide{
+        display: none;
+    }
+}
+.books-lists .book-link{
+    padding: 24px;
+}
+.book-popup{
+    line-height: 0.6;
+    width: 90%;
+    max-width: 780px;
+    margin-inline: auto;
+    height: 550px;
+    position: relative;
+    iframe,embed{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    button.mfp-close, button.mfp-arrow{
+        top: -55px;
+    }
+}

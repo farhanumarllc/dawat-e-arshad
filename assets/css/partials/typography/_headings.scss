@@ -1,0 +1,71 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+h1,
+.heading-1,
+h2,
+.heading-2,
+h3,
+.heading-3,
+h4,
+.heading-4,
+h5,
+.heading-5,
+h6,
+.heading-6 {
+	@include font(mont, bold);
+	// font-family: 'Jameel Noori Nastaleeq', serif;
+	font-weight: 700;
+	margin: 0 0 20px;
+	color: var(--doi_heading_color);
+	line-height: 1.1;
+	text-transform: initial;
+	
+	a {
+		color: var(--doi_heading_link_color);
+		border-bottom: none;
+		@include font(mont,bold);
+
+		&:hover {
+			color: var(--doi_heading_link_color_hover);
+		}
+	}
+}
+
+h1,
+.heading-1 {
+	font-size: var(--doi_font_size_7);
+}
+
+h2,
+.heading-2 {
+	font-size: var(--doi_font_size_6);
+}
+
+h3,
+.heading-3 {
+	font-size: var(--doi_font_size_5);
+}
+
+h4,
+.heading-4 {
+	font-size: var(--doi_font_size_4);
+}
+
+h5,
+.heading-5 {
+	font-size: var(--doi_font_size_3);
+}
+
+h6,
+.heading-6 {
+	font-size: var(--doi_font_size_2);
+}
+.line-height-200{
+	line-height: 2.3;
+    font-family: "Jameel Noori Nastaleeq", serif;
+    direction: rtl;
+}

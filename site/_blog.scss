@@ -1,0 +1,29 @@
+a,
+a:visited {
+	&.blog-article {
+		font-weight: 400;
+		color: var(--doi_regular_text);
+		display: block;
+		p {
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.blog-article-btn{
+	line-height: .6;
+	margin-top: 20px;
+	span{
+		&.button{
+			padding: 12px 20px 12px;
+		}
+	}
+}
+.blog-article-inner{
+	padding: 30px;
+}

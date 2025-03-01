@@ -1,0 +1,190 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+form {
+	margin: 0 0 20px;
+}
+
+label {
+	margin: 0 0 6px;
+	display: inline-block;
+	line-height: 1.2;
+	font-size: 16px;
+}
+
+fieldset {
+	margin: 10px 0 30px;
+	display: block;
+}
+
+legend {
+	display: block;
+	margin: 0 0 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="password"],
+input[type="time"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="file"],
+input[type="range"],
+input[list],
+input[type="string"],
+input[type="phone"],
+select,
+textarea,
+.gform-text-input-reset {
+	@include font(rbt, reg);
+	font-size: var(--doi_font_size_1);
+	height: 48px;
+	width: 100%;
+	border:none;
+	background-color: var(--doi_input_bg);
+	color: var(--doi_input_color);
+	outline: none;
+	padding: 0 16px;
+	margin: 0 0 20px;
+	max-width: 100%;
+	box-sizing: border-box;
+	border-radius: 6px;
+	@include transition(all, 0.3s, ease-in-out);
+	box-shadow: var(--box-shahdow_2);
+	&:focus {
+		border: none;
+		box-shadow: var(--box-shahdow_3);
+	}
+}
+
+// Placeholder Style
+
+::input-placeholder {
+	color: var(--doi_placeholder_color);
+}
+
+::input-placeholder {
+	color: var(--doi_placeholder_color);
+}
+
+::placeholder {
+	color: var(--doi_placeholder_color);
+}
+
+input[type="text"]:disabled {
+	background-color: var(--doi_disabled_input_bgcolor);
+	border: 1px solid var(--doi_disabled_input_border_color);
+}
+
+input[type="hidden"],
+datalist {
+	display: none;
+}
+
+input[type="file"] {
+	padding-top: 13px;
+}
+
+// Search Field Style
+
+input[type="search"] {
+	padding-right: 45px;
+	position: relative;
+	background-image: url(../images/search-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center right 10px;
+	background-size: 28px;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+input[type="search"]::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
+input[type="color"] {
+	border: 1px solid var(--doi_color_field_border_color);
+	background-color: var(--doi_color_field_bgcolor);
+	height: 25px;
+	width: 50px;
+	margin: 0 0 20px;
+	padding: 3px;
+	cursor: pointer;
+	appearance: none;
+	box-sizing: border-box;
+}
+
+::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+::-webkit-color-swatch {
+	border: 0;
+	border-radius: 0;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner {
+	border: 0;
+}
+
+::-moz-focus-inner {
+	padding: 0;
+}
+
+select {
+	cursor: pointer;
+	appearance: none;
+	position: relative;
+	background-image: url(../images/down-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center right 10px;
+	background-size: 14px;
+}
+
+.ginput_container_multiselect select {
+	min-height: 77px;
+}
+
+textarea {
+	padding: 16px;
+	height: 150px;
+	resize: none;
+	overflow: auto;
+}
+
+.gfield,
+.hs-form-field {
+	box-sizing: border-box;
+	position: relative;
+}
+
+// Lists
+
+.gfield_list_icons {
+	margin-top: 20px;
+}

@@ -1,0 +1,26 @@
+.contact-form{
+    box-shadow: var(--box-shahdow_2);
+    padding: 30px 24px;
+    form{
+    margin-bottom: 0;
+    }
+    .input-submit input{
+        margin: 0;
+    }
+}
+.input-field,.textarea,.input-submit{
+    line-height: 1;
+}
+.input-submit{
+    margin-top: 10px;
+}
+.recaptcha{
+    margin-bottom: 20px;
+    min-height: 78px;
+}
+.map-view{
+    line-height: .6;
+    iframe{
+        width: 100%;
+    }
+}

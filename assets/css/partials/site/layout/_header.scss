@@ -1,0 +1,240 @@
+.slide-thumb img,
+.burger-single,
+.post-tags,
+.post-content-des p,
+.post-meta,
+.search-button,
+.single-blog-post,
+.wpcf7-submit,
+a,
+a:visited,
+button,
+input[type="submit"],
+.home-hero,
+header {
+  @include transition(all, 0.3s, ease-in-out);
+}
+
+.top-bar {
+  background-color: var(--doi_topbar_bgcolor);
+  color: var(--doi_topbar_color);
+  transition: all 0.3s ease-in-out;
+  padding: 5px 0;
+  .header-wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .language-options {
+    ul {
+      li {
+        padding: 0 14px;
+        padding-left: 14px;
+      }
+    }
+  }
+}
+
+.top-bar-text {
+  gap: 12px;
+
+  span{
+    display: inline-block;
+    padding-right: 12px;
+    border-right: 1px solid var(--doi_border_1);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    &:last-child{
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+  a,
+  a:visited {
+    font-size: var(--doi_font_size_3);
+    color: var(--wp--preset--color--white);
+    display: inline-block;
+    border-bottom: 1px solid var(--doi_border_2);
+    line-height: 1.3;
+
+    &:hover {
+      border-color: var(--doi_link_border_color_hover);
+    }
+  }
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo a {
+  display: inline-block;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  z-index: 9;
+  line-height: 0;
+  top: 0;
+  left: 0;
+  text-align: center;
+
+img {
+    width: 180px;
+    filter: invert(1) brightness(2);
+}
+}
+
+.header-inner {
+  box-sizing: border-box;
+  @include transition(all, 0.3s, ease-in-out);
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  background: var(--doi_header_bgcolor);
+  border-bottom: 1px solid var(--doi_border_1);
+}
+
+.header-wrapper {
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header-btns {
+  margin-top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  a,a:visited{
+    min-width: 100px;
+  }
+}
+
+.desktop-hide {
+  display: none;
+}
+
+.log-in-btn {
+  padding: 5px 20px;
+  color: var(--doi_white);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--doi_golden_1);
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      height: 50%;
+    }
+  }
+}
+
+.language-options {
+  position: relative;
+  min-width: 100px;
+
+  ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    border-top: 0;
+    margin: 0;
+    min-width: 100px;
+    box-shadow: 0 0 15px 0px var(--doi_dgray);
+    background-color: var(--doi_header_submenu_bgcolor);
+    border-radius: 0;
+    position: absolute;
+    z-index: 12;
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+    box-shadow: var(--box-shahdow_1);
+
+    li {
+      margin-bottom: 0;
+      position: relative;
+      z-index: 1;
+	  transition: all .3s ease-in-out .15s;
+	  font-size: 16px;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: var(--doi_golden_1);
+        transition: all 0.2s ease-in-out;
+        z-index: -1;
+      }
+
+	  &::before {
+		top: 0;
+	  }
+	
+	  &::after {
+		bottom: 0;
+	  }
+	  
+      &:hover {
+		color: var(--doi_white);
+        &::before,
+        &::after {
+          height: 50%;
+        }
+      }
+    }
+  }
+
+  li,
+  span {
+    cursor: pointer;
+    color: var(--doi_header_submenu_color);
+  }
+
+  span {
+    background-color: var(--doi_golden_1);
+    color: var(--doi_white);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+  }
+}

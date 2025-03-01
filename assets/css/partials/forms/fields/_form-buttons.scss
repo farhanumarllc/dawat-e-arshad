@@ -1,0 +1,88 @@
+/* -------------------------------------------------
+>> Project Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+input[type="image"] {
+	margin: 0 10px 0 0;
+}
+
+input[type="submit"],
+button,
+input[type="button"],
+input[type="reset"],
+button {
+	padding: 12px 20px;
+	display: inline-block;
+	line-height: 1.3;
+	box-sizing: border-box;
+	@include transition(all, 0.3s, ease-in-out);
+	background-color: var(--doi_button_bgcolor);
+	border: none;
+	color: var(--doi_button_color);
+	outline: none;
+	font-size: var(--doi_font_size_1);
+	outline: none;
+	height: 48px;
+	cursor: pointer;
+	margin: 0 10px 10px 0;
+	border-radius: 6px;
+	text-transform: capitalize;
+}
+
+input[type="submit"]:hover,
+button:hover,
+input[type="button"]:hover {
+	color: var(--doi_button_color_hover);
+	background-color: var(--doi_button_bgcolor_hover);
+}
+
+input[type="reset"] {
+	background-color: var(--doi_theme_btn_bgcolor);
+	color: var(--doi_theme_btn_color);
+
+	&:hover {
+		color: var(--doi_theme_btn_color);
+		background-color: var(--doi_theme_btn_bgcolor_hover);
+	}
+}
+
+button {
+	position: relative;
+    overflow: hidden;
+	span {
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 0;
+		background-color: var(--doi_theme_btn_bgcolor_hover);
+		transition: all 0.2s ease-in-out;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+
+	&:hover,
+	&.active {
+		color: var(--doi_theme_btn_color_hover);
+
+		&::before,
+		&::after {
+			height: 50%;
+		}
+	}
+}
